@@ -9,15 +9,19 @@ def menu():
             resultado = num * contador
             print(str(num) + ' X ' + str(contador) + ' = ' + str(resultado))
             contador = contador + 1
-    if num <= 0 or num > 10:
+    if num <= 0 or num > 10 or num == "":
         print('nao e um numero valido para uma taboada')
         return menu()
     opcao = str(input('gostaria de fazer mais alguma taboada?: '))
     if opcao == 'não' or opcao == 'nao':
         print('good bye')
         exit()
-    if opcao == 'sim':
+    if opcao == 'sim' or opcao == 'Sim':
         return menu()
     if opcao != 'sim' and opcao != 'nao' and opcao != 'não':
         print('opção invalida!.... saindo do programa por inserção de dados inválidos')
+        exit()
+    else:
+        print('opção invalida!.... saindo do programa por inserção de dados inválidos')
+        exit()
 menu();
