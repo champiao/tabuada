@@ -1,7 +1,14 @@
+#!/usr/bin/env python
 from tqdm import tqdm
 from time import sleep
 import math
 def menu():
+    print('=============================================')
+    print('=====					=====')
+    print('=====	Bem vindo a calculadora		=====')
+    print('=====		de tabuada		=====')
+    print('=====					=====')
+    print('=============================================')
     numIn = input('digite um numero de 1 a 9: ')
     contador = 1
     if numIn == "":
