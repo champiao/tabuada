@@ -16,7 +16,7 @@ def menu():
     if num != 0 and num <= 10:
         while contador != 11:
             resultado = num * contador
-            print(str(num) + ' X ' + str(contador) + ' = ' + str(resultado))
+            print('{} X {} = {}'.format(num, contador, resultado))
             contador = contador + 1
     if num <= 0 or num > 10 or num == "":
         print('não é um número valido para uma tabuada')
