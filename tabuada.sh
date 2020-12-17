@@ -27,7 +27,7 @@ def menu():
         exit()
     if opcao == 'sim' or opcao == 'Sim' or opcao == " sim" or opcao == " Sim" or opcao == "sim " or opcao == "Sim ":
         return menu()
-    if opcao != 'sim' and opcao != 'nao' and opcao != 'não':
+    if opcao != 'sim' and opcao != 'nao' and opcao != 'não' and opcao != ' nao':
         print('opção invalida!.... saindo do programa por inserção de dados inválidos')
         exit()
     elif opcao == "":
