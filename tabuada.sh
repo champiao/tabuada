@@ -22,12 +22,12 @@ def menu():
         print('não é um número valido para uma tabuada')
         return menu()
     opcao = str(input('gostaria de fazer mais alguma tabuada?: '))
-    if opcao == 'não' or opcao == 'nao':
+    if opcao == 'não' or opcao == 'nao' or opcao == ' nao' or opcao == ' não' or opcao == 'nao ' or opcao == 'não ':
         print('good bye')
         exit()
     if opcao == 'sim' or opcao == 'Sim' or opcao == " sim" or opcao == " Sim" or opcao == "sim " or opcao == "Sim ":
         return menu()
-    if opcao != 'sim' and opcao != 'nao' and opcao != 'não' and opcao != ' nao':
+    if opcao != 'sim' and opcao != 'Sim' and opcao != ' sim' and opcao != ' Sim' and opcao != 'sim ' and opcao != 'Sim ' and opcao != 'nao' and opcao != 'não' and opcao != ' nao' and opcao != 'nao ' and opcao != ' não' and opcao != 'não ':
         print('opção invalida!.... saindo do programa por inserção de dados inválidos')
         exit()
     elif opcao == "":
