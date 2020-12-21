@@ -1,6 +1,10 @@
-from tqdm import tqdm
-from time import sleep
 import math
+print('=============================================')
+print('=====                                        =====')
+print('=====        Bem vindo a calculadora         =====')
+print('=====                de tabuada              =====')
+print('=====                                        =====')
+print('=============================================')
 def menu():
     numIn = input('digite um numero de 1 a 9: ')
     contador = 1
@@ -11,18 +15,18 @@ def menu():
     if num != 0 and num <= 10:
         while contador != 11:
             resultado = num * contador
-            print(str(num) + ' X ' + str(contador) + ' = ' + str(resultado))
+            print('{} X {} = {}'.format(num, contador, resultado))
             contador = contador + 1
     if num <= 0 or num > 10 or num == "":
         print('não é um número valido para uma tabuada')
         return menu()
     opcao = str(input('gostaria de fazer mais alguma tabuada?: '))
-    if opcao == 'não' or opcao == 'nao':
+    if opcao == 'não' or opcao == 'nao' or opcao == ' nao' or opcao == ' não' or opcao == 'nao ' or opcao == 'não ':
         print('good bye')
         exit()
     if opcao == 'sim' or opcao == 'Sim' or opcao == " sim" or opcao == " Sim" or opcao == "sim " or opcao == "Sim ":
         return menu()
-    if opcao != 'sim' and opcao != 'nao' and opcao != 'não':
+    if opcao != 'sim' and opcao != 'Sim' and opcao != ' sim' and opcao != ' Sim' and opcao != 'sim ' and opcao != 'Sim ' and opcao != 'nao' and opcao != 'não' and opcao != ' nao' and opcao != 'nao ' and opcao != ' não' and opcao != 'não ':
         print('opção invalida!.... saindo do programa por inserção de dados inválidos')
         exit()
     elif opcao == "":
